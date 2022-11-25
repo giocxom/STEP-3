@@ -17,9 +17,13 @@
 }
 .SecondaryDiv h1{
     position: absolute;
+    cursor: pointer;
     top: 0;
     right: 10px;
 
+}
+.SecondaryDiv h2{
+   cursor: pointer;
 }
 .SecondaryDiv img{
     width: 70%;
