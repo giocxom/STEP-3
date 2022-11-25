@@ -83,13 +83,19 @@ const dataAraay = [
             'address 3'
         ]
     },
-]
+];
 
-
+function addDiv(dataAraay,MainDiv) {
+MainDiv = document.createElement('div')
 dataAraay.forEach(person => {
-    var div = document.querySelector('.MainDiv')
+    
+    var section = document.querySelector('section');
+    MainDiv.className='MainDiv';
+    
+    section.appendChild(MainDiv);
+    
 
-    div.innerHTML = div.innerHTML + `
+    MainDiv.innerHTML = MainDiv.innerHTML + `
     <div class="SecondaryDiv";>
             <h1>${person.userId}</h1>
             <img src="${person.userImage}" alt="">
@@ -111,3 +117,6 @@ hoverdiv.forEach((user)=>{
         user.classList.toggle('hoverme');
     })
 });
+}
+
+addDiv(dataAraay)
